@@ -11,7 +11,6 @@ def main():
     app.run()
 
 def env():
-    # ok:debug-enabled
     app.run("0.0.0.0", debug=os.environ.get("DEBUG", False))
 
 if __name__ == "__main__":
